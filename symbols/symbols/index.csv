@@ -1,0 +1,81 @@
+category,symbol,tag_or_note,standard_or_practice,file
+Equipment,Centrifugal pump,P,PIP PIC001 / ISO 10628-2,equipment_centrifugal_pump.svg
+Equipment,Positive displacement pump,P,PIP PIC001 / ISO 10628-2,equipment_positive_displacement_pump.svg
+Equipment,Centrifugal compressor,C / K,PIP PIC001 / ISO 10628-2,equipment_centrifugal_compressor.svg
+Equipment,Blower / fan,B / K,PIP PIC001 / ISO 10628-2,equipment_blower_fan.svg
+Equipment,Roots blower,B,PIP PIC001 / ISO 10628-2,equipment_roots_blower.svg
+Equipment,Vertical vessel,V / D,PIP PIC001; ASME VIII design,equipment_vertical_vessel.svg
+Equipment,Horizontal vessel,V / D,PIP PIC001; ASME VIII design,equipment_horizontal_vessel.svg
+Equipment,Column with trays,T / C,PIP PIC001 / ISO 10628-2,equipment_column_with_trays.svg
+Equipment,Reactor (packed bed),R,PIP PIC001 / ISO 10628-2,equipment_reactor_packed_bed.svg
+Equipment,Agitated vessel,R / V,PIP PIC001 / ISO 10628-2,equipment_agitated_vessel.svg
+Equipment,Atmospheric tank,TK,PIP PIC001 / ISO 10628-2,equipment_atmospheric_tank.svg
+Equipment,Hopper / bin,H / TK,PIP PIC001 / ISO 10628-2,equipment_hopper_bin.svg
+Equipment,Shell and tube exchanger,E,PIP PIC001 / ISO 10628-2,equipment_shell_and_tube_exchanger.svg
+Equipment,Plate heat exchanger,E,PIP PIC001 / ISO 10628-2,equipment_plate_heat_exchanger.svg
+Equipment,Air cooler (fin-fan),E / AC,PIP PIC001 / ISO 10628-2,equipment_air_cooler_fin-fan.svg
+Equipment,Fired heater,H / F,PIP PIC001 / ISO 10628-2,equipment_fired_heater.svg
+Equipment,Electric heater,E / H,PIP PIC001 / ISO 10628-2,equipment_electric_heater.svg
+Equipment,Cyclone,CY,PIP PIC001 / ISO 10628-2,equipment_cyclone.svg
+Equipment,Bag house filter,F,PIP PIC001 / ISO 10628-2,equipment_bag_house_filter.svg
+Equipment,Filter / strainer,F,PIP PIC001 / ISO 10628-2,equipment_filter_strainer.svg
+Equipment,Screw conveyor,SC,PIP PIC001 / ISO 10628-2,equipment_screw_conveyor.svg
+Equipment,Rotary airlock valve,RV,Common practice,equipment_rotary_airlock_valve.svg
+Equipment,Ejector,J,PIP PIC001 / ISO 10628-2,equipment_ejector.svg
+Equipment,Flare,FL,PIP PIC001 / ISO 10628-2,equipment_flare.svg
+Equipment,Stack,ST,PIP PIC001 / ISO 10628-2,equipment_stack.svg
+Equipment,Cooling tower,CT,PIP PIC001 / ISO 10628-2,equipment_cooling_tower.svg
+Equipment,Electric motor,M,PIP PIC001 / ISO 10628-2,equipment_electric_motor.svg
+Equipment,Vendor package,PK,PIP PIC001,equipment_vendor_package.svg
+Valves,Gate valve,HV,ISA-5.1 / ISO 10628-2,valves_gate_valve.svg
+Valves,Globe valve,HV,ISA-5.1 / ISO 10628-2,valves_globe_valve.svg
+Valves,Ball valve,HV,ISA-5.1 / ISO 10628-2,valves_ball_valve.svg
+Valves,Butterfly valve,HV,ISA-5.1 / ISO 10628-2,valves_butterfly_valve.svg
+Valves,Plug valve,HV,ISA-5.1 / ISO 10628-2,valves_plug_valve.svg
+Valves,Diaphragm valve,HV,ISA-5.1 / ISO 10628-2,valves_diaphragm_valve.svg
+Valves,Check valve,CK,ISA-5.1 / ISO 10628-2,valves_check_valve.svg
+Valves,Three-way valve,HV,ISA-5.1,valves_three-way_valve.svg
+Valves,Angle valve,HV,ISA-5.1,valves_angle_valve.svg
+Valves,"Control valve, diaphragm actuator",FV / TV / PV / LV,ISA-5.1,valves_control_valve_diaphragm_actuator.svg
+Valves,"On/off valve, piston actuator",XV,ISA-5.1,valves_on_off_valve_piston_actuator.svg
+Valves,Motor operated valve,MOV,ISA-5.1,valves_motor_operated_valve.svg
+Valves,Solenoid valve,SV,ISA-5.1,valves_solenoid_valve.svg
+Valves,Hand operated (stem shown),HV,ISA-5.1,valves_hand_operated_stem_shown.svg
+Valves,Pressure safety valve,PSV,ISA-5.1; ASME BPVC VIII,valves_pressure_safety_valve.svg
+Valves,"Pressure regulator, self-acting",PCV,ISA-5.1,valves_pressure_regulator_self-acting.svg
+Valves,Rupture disc,PSE,ISA-5.1,valves_rupture_disc.svg
+Valves,Flame arrestor,FA,Common practice,valves_flame_arrestor.svg
+Valves,Reducer,,ISO 10628-2 / PIP PIC001,valves_reducer.svg
+Valves,Spectacle blind,,ISO 10628-2 / PIP PIC001,valves_spectacle_blind.svg
+Valves,Y-strainer,,ISO 10628-2 / PIP PIC001,valves_y-strainer.svg
+Instruments,Field mounted instrument,e.g. PI,ISA-5.1,instruments_field_mounted_instrument.svg
+Instruments,Control room / main panel,e.g. TI,ISA-5.1,instruments_control_room_main_panel.svg
+Instruments,Behind panel (not accessible),e.g. TY,ISA-5.1,instruments_behind_panel_not_accessible.svg
+Instruments,Local (auxiliary) panel,e.g. HS,ISA-5.1,instruments_local_auxiliary_panel.svg
+Instruments,Shared display / control (DCS),e.g. FIC,ISA-5.1,instruments_shared_display_control_dcs.svg
+Instruments,Computer function,e.g. FY,ISA-5.1,instruments_computer_function.svg
+Instruments,Programmable logic control (PLC),e.g. UC,ISA-5.1,instruments_programmable_logic_control_plc.svg
+Instruments,Interlock,I,ISA-5.1 / ISA-5.2,instruments_interlock.svg
+Instruments,Pressure indicating transmitter,PIT,ISA-5.1,instruments_pressure_indicating_transmitter.svg
+Instruments,Flow element (orifice plate),FE,ISA-5.1,instruments_flow_element_orifice_plate.svg
+Instruments,Thermowell and element,TW / TE,ISA-5.1,instruments_thermowell_and_element.svg
+Lines,Major process line,thick solid,PIP PIC001 / ISO 10628-2,lines_major_process_line.svg
+Lines,Minor process / utility line,thin solid,PIP PIC001 / ISO 10628-2,lines_minor_process_utility_line.svg
+Lines,Flow direction,arrow on line,PIP PIC001,lines_flow_direction.svg
+Lines,Instrument supply / process connection,thin solid,ISA-5.1,lines_instrument_supply_process_connection.svg
+Lines,Undefined signal,single slashes,ISA-5.1,lines_undefined_signal.svg
+Lines,Pneumatic signal,double slashes,ISA-5.1,lines_pneumatic_signal.svg
+Lines,Electrical signal,dashed,ISA-5.1,lines_electrical_signal.svg
+Lines,Capillary tube,crosses,ISA-5.1,lines_capillary_tube.svg
+Lines,Hydraulic signal,L marks,ISA-5.1,lines_hydraulic_signal.svg
+Lines,"Electromagnetic / sonic, guided",sine on line,ISA-5.1,lines_electromagnetic_sonic_guided.svg
+Lines,"Electromagnetic / sonic, unguided","sine, no line",ISA-5.1,lines_electromagnetic_sonic_unguided.svg
+Lines,Software / data link,open circles,ISA-5.1,lines_software_data_link.svg
+Lines,Mechanical link,solid circles,ISA-5.1,lines_mechanical_link.svg
+Lines,Heat-traced line,parallel dashed,PIP PIC001,lines_heat-traced_line.svg
+Lines,Jacketed line,double outline,PIP PIC001,lines_jacketed_line.svg
+Lines,"Crossing, no connection",vertical breaks,PIP PIC001,lines_crossing_no_connection.svg
+Lines,Junction,dot,PIP PIC001,lines_junction.svg
+Lines,Off-page connector,to / from drawing,PIP PIC001,lines_off-page_connector.svg
+Lines,Specification break,spec A | spec B,PIP PIC001,lines_specification_break.svg
+Lines,Battery limit,dash-dot,PIP PIC001,lines_battery_limit.svg
