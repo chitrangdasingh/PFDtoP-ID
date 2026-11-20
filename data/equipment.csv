@@ -1,0 +1,37 @@
+tag,name,type,area
+PK-101,Biomass Handling System,package,100
+H-101,Service Hopper,hopper,100
+SC-101,Metering Screw with Band Heater,screw_heated,100
+E-101,Shot Heater (Inductive),electric_heater_vessel,100
+R-101,Twin-Screw Auger Pyrolyser,auger_reactor,100
+CY-201,Cyclone,cyclone,200
+E-201,Condenser-1,condenser,200
+E-202,Condenser-2,condenser,200
+TK-201,Bio-oil Tank 1,tank,200
+TK-202,Bio-oil Tank 2,tank,200
+B-201,Suction Blower,blower,200
+FL-201,Flare Unit,flare,200
+CT-201,Cooling Tower,cooling_tower,200
+E-301,Char and Heat-Carrier Cooler,solids_cooler,300
+S-301,Char/Shot Separator,solids_separator,300
+TK-301,Char Storage,bin,300
+PK-401,LOx / VPSA Oxygen Supply,package,400
+E-401,Oxygen Pre-heater,heat_exchanger,400
+R-401,Gasifier (POX + Char Bed),gasifier,400
+PK-402,Syngas Cleaning,package,400
+PK-501,Gas Engine Genset,package,500
+E-402,Syngas Cooler,gas_cooler,400
+F-401,Bag House Filter (Viking-style),bag_filter,400
+E-403,Condensing Cooler (Viking-style),condenser,400
+F-402,Demister Cartridge Filter (Viking-style),filter,400
+B-401,Roots Blower (Viking-style),blower,400
+TK-401,Condensate Tank,tank,400
+TK-402,Filter Dust Bin,bin,400
+TK-403,Gasifier Ash Bin,bin,400
+PK-403,Nitrogen Supply,package,400
+U-401,Cooling Water Header,package,400
+CY-401,Hot Ash Cyclone (Aspen B1),cyclone,400
+V-401,Water Knock-out Cooler and Drum (Aspen B5),knockout_drum,400
+E-501,Exhaust Heat Recovery Exchanger (Aspen B16),heat_exchanger,500
+ST-501,Exhaust Stack,stack,500
+F-501,Engine Air Intake,air_intake,500

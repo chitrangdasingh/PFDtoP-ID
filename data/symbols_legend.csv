@@ -1,0 +1,64 @@
+category,code,meaning,drawing_symbol,standard
+ISA first letter,A,Analysis (composition),bubble text,ANSI/ISA-5.1
+ISA first letter,B,Burner / combustion (flame),bubble text,ANSI/ISA-5.1
+ISA first letter,F,Flow rate,bubble text,ANSI/ISA-5.1
+ISA first letter,H,Hand (manual),bubble text,ANSI/ISA-5.1
+ISA first letter,L,Level,bubble text,ANSI/ISA-5.1
+ISA first letter,P,Pressure,bubble text,ANSI/ISA-5.1
+ISA first letter,PD,Pressure differential,bubble text,ANSI/ISA-5.1
+ISA first letter,S,Speed / frequency,bubble text,ANSI/ISA-5.1
+ISA first letter,T,Temperature,bubble text,ANSI/ISA-5.1
+ISA first letter,X,Unclassified (here: on/off shutdown),bubble text,ANSI/ISA-5.1
+ISA succeeding letter,I,Indicate,bubble text,ANSI/ISA-5.1
+ISA succeeding letter,C,Control,bubble text,ANSI/ISA-5.1
+ISA succeeding letter,T,Transmit,bubble text,ANSI/ISA-5.1
+ISA succeeding letter,E,Primary element (sensor),bubble text,ANSI/ISA-5.1
+ISA succeeding letter,V,Valve / final element,bubble text,ANSI/ISA-5.1
+ISA succeeding letter,S,Switch,bubble text,ANSI/ISA-5.1
+ISA succeeding letter,A,Alarm,bubble text,ANSI/ISA-5.1
+ISA succeeding letter,G,Glass / gauge (local view),bubble text,ANSI/ISA-5.1
+ISA modifier,H / HH,High / high-high,suffix,ANSI/ISA-5.1
+ISA modifier,L / LL,Low / low-low,suffix,ANSI/ISA-5.1
+Instrument location,FIELD,Field-mounted discrete instrument,plain circle,ANSI/ISA-5.1
+Instrument location,DCS,Shared display / shared control (DCS) accessible to operator,circle in square with centre line (drawn here as barred circle),ANSI/ISA-5.1
+Instrument location,SIS,Safety instrumented function / logic,diamond in square (drawn here as barred diamond),ANSI/ISA-5.1
+Line type,PROCESS,Main process line,thick solid line,ANSI/ISA-5.1
+Line type,SOLIDS,Solids transfer (chute / screw / conveyor),thick brown line,project convention
+Line type,UTILITY,Utility line (cooling water),thin solid blue line,project convention
+Line type,SIGNAL,Electrical / instrument signal,dashed line,ANSI/ISA-5.1
+Line type,TRIP,Safety trip signal,red dashed line,project convention
+Valve,HV,Manual isolation valve (gate/ball),bow-tie,ISA-5.1 / ISO 10628
+Valve,FV / TV,Control valve with actuator (flow / temperature),bow-tie with actuator,ANSI/ISA-5.1
+Valve,PCV,Self-contained pressure regulator,bow-tie with pressure tap,ANSI/ISA-5.1
+Valve,XV,On/off shutdown valve (actuated),bow-tie with piston actuator,ANSI/ISA-5.1
+Valve,CK,Check (non-return) valve,bow-tie half filled,ISA-5.1 / ISO 10628
+Valve,PSV,Pressure safety (relief) valve,angle valve with spring,ANSI/ISA-5.1 ; ASME BPVC VIII
+Valve,SG,Slide gate (solids),gate symbol,project convention
+Valve,RV,Rotary airlock valve (solids),circle with vanes,project convention
+Fitting,FA,Flame arrestor,box with F,project convention
+Line number,format,"size-service-sequence-pipe spec-insulation e.g. 4""-PV-1004-SS2-H",text on line,project convention (ASME B31.3 piping)
+Service code,BM,Biomass (solid),,project
+Service code,SH,Steel shots / heat carrier (solid),,project
+Service code,CH,Char (solid),,project
+Service code,PV,Pyrolysis vapours,,project
+Service code,PG,Pyrolysis gases,,project
+Service code,NCG,Non-condensable gases,,project
+Service code,BO,Bio-oil,,project
+Service code,OX,Oxygen / oxidant,,project
+Service code,SG,Syngas,,project
+Service code,EG,Engine exhaust gas,,project
+Service code,CWS / CWR,Cooling water supply / return,,project
+Service code,AS,Ash / filter dust (solid),,project
+Service code,CD,Condensate,,project
+Service code,N2,Nitrogen,,project
+ISA first letter,PDIC,Pressure differential indicating controller,bubble text,ANSI/ISA-5.1
+Service code,AIR,Air (engine combustion air or air-blown oxidant),,project
+Service code,OXC,Oxidant O2 + CO2 mixture,,project
+Valve,LV,Level control valve,bow-tie with actuator,ANSI/ISA-5.1
+Pipe spec,CS1,"Carbon steel ASTM A106 Gr.B, 150# RF, dry non-corrosive service up to 200 C",,project (to be confirmed)
+Pipe spec,SS1,"SS316L ASTM A312, oxygen-cleaned, 150# RF, oxidant (O2 + CO2) service",,project (to be confirmed)
+Pipe spec,SS2,"SS316L ASTM A312, 150# RF, wet / acidic gas and condensate, or 200-425 C",,project (to be confirmed)
+Pipe spec,SS3,"SS310S ASTM A312, 150# RF, hot gas 425-900 C",,project (to be confirmed)
+Insulation,H,"Heat conservation (keep process hot, e.g. above tar dew point)",,project (to be confirmed)
+Insulation,P,Personnel protection only (surface above 60 C),,project (to be confirmed)
+Insulation,N,No insulation,,project (to be confirmed)

@@ -1,0 +1,30 @@
+{
+ "intents": [
+  "balance",
+  "bom",
+  "check",
+  "count",
+  "fail_position",
+  "failure",
+  "hazop",
+  "knowledge",
+  "moc",
+  "neighbours",
+  "nozzles",
+  "path",
+  "pdm",
+  "propose",
+  "remark",
+  "setpoint",
+  "suggest",
+  "trace"
+ ],
+ "card": {
+  "train_examples": 1140,
+  "held_out_examples": 236,
+  "user_examples": 0,
+  "held_out_accuracy": 0.788,
+  "train_accuracy": 0.958,
+  "note": "held-out = question templates never used in training, filled with plant tags"
+ }
+}

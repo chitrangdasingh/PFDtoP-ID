@@ -1,0 +1,10 @@
+tag,item,kW
+SC-101 + R-101,Heat demand of dryer and pyrolyser (supplied from E-501),151.13
+R-401,Net heat of gasifier reactors (negative = released),-118.63
+E-401,Oxidant pre-heater duty (syngas to oxidant),-32.32
+E-402,Syngas cooler duty (negative = removed),-208.49
+V-401,Knock-out cooling duty (negative = removed),-39.5
+E-501,Exhaust heat recovered (negative = removed from exhaust),-151.13
+PK-501,Engine net shaft work,386.0
+PK-501,Engine mechanical losses,87.86
+TK-403,Ash cooling,1.01

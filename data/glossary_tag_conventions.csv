@@ -1,0 +1,28 @@
+item,format,example,rule
+Equipment tag,PREFIX-ANN,R-401,PREFIX = equipment type letters; A = plant area digit (4 = area 400); NN = running number in the area
+Instrument tag,LETTERS-ALLL,FIC-4026,"LETTERS = ISA-5.1 function letters; A = area digit; LLL = loop number. All devices of one loop share the number (FT-4026, FIC-4026, FV-4026)"
+Valve tag (manual),HV-ALLL,HV-4023,Hand valve with its own running number
+Valve tag (control),xV-ALLL,FV-4026,"Takes the loop number of its controller; first letter = controlled variable (F, T, P, L)"
+Valve tag (shutdown),XV-ALLL,XV-4027,On/off actuated valve operated by a trip
+Safety valve,PSV-ALLL,PSV-4007,Pressure safety valve on equipment or line
+Line number (fluid),SIZE-SERVICE-SEQ-SPEC-INS,"8""-SG-4029-SS2-H",Nominal size - service code - sequence (area digit + number) - pipe spec - insulation code
+Line number (solids),SERVICE-SEQ,CH-1024,"Chutes, screws and conveyors carry no pipe size or spec"
+Trip / alarm suffix,"HH, H, L, LL",TSHH-4006,HH and LL are trip levels (safety system); H and L are alarms
+Plant area,A00,400,100 feed and pyrolysis; 200 condensing; 300 solids handling; 400 gasification and syngas cleaning; 500 power
+Equipment prefix,R,R-101,"Reactor (pyrolyser, gasifier)"
+Equipment prefix,E,E-401,"Heat exchanger, heater, cooler, condenser"
+Equipment prefix,TK,TK-401,Tank or bin
+Equipment prefix,H,H-101,Hopper
+Equipment prefix,SC,SC-101,Screw conveyor / feeder
+Equipment prefix,CY,CY-201,Cyclone
+Equipment prefix,F,F-401,Filter
+Equipment prefix,B,B-401,Blower
+Equipment prefix,S,S-301,Separator (solids)
+Equipment prefix,FL,FL-201,Flare
+Equipment prefix,CT,CT-201,Cooling tower
+Equipment prefix,PK,PK-501,Vendor package
+Equipment prefix,U,U-401,Utility header
+Control convention,Feedback loop,FT -> FIC -> FV,"Transmitter measures, controller compares with set point, valve acts"
+Control convention,Signal lines,dashed,Dashed = instrument signal; red dashed = safety trip
+Control convention,Fail position,FC / FO,State fail-closed or fail-open for every actuated valve (not yet assigned in this draft)
+Control convention,Instrument location,circle / barred circle / diamond,Field instrument / DCS function / safety function

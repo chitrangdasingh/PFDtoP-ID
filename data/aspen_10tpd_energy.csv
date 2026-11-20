@@ -1,0 +1,72 @@
+item,value,unit,note
+Biomass C -> CO2,13.242083650870013,kmol/h,C in 2-1 species
+Biomass H -> H2O,15.970112380165736,kmol/h,moisture + H in species
+Syngas C,16.71703268581351,kmol/h,
+Syngas H -> H2O,12.75381713346286,kmol/h,
+Exhaust C,16.717032685813386,kmol/h,
+Exhaust H -> H2O,12.75381713346282,kmol/h,
+Biomass (as received),417.0,kg/h,Aspen stream 1
+Dry biomass,333.6,kg/h,
+O2 in,125.00468767578784,kg/h,45 %
+CO2 in,152.8006943907946,kg/h,55 %
+Engine air,3992.37244329189,kg/h,5.05 mol air / mol syngas
+"Biomass energy in (LHV, from Aspen enthalpy of stream 1)",1603.9189831268625,kW,H(stream 1) minus complete-combustion datum
+Biomass LHV (as received),13.846782588145576,MJ/kg,
+Oxidant sensible energy (30 C),0.5496857659481217,kW,
+"Engine air energy (25 C, Aspen offset)",-0.30883411849777165,kW,about 0
+Ash flow,4.5036,kg/h,
+Ash cooler heat removed (800 -> 30 C),1.0114334999999999,kW,m x Cp x dT / 3600
+Ash sensible heat at 30 C,0.00656775,kW,leaves with the ash
+"Gasifier reactors net (OXID + RED, R-PD -> S1)",-118.63143343634948,kW,negative = heat leaves the reactors
+B2 syngas cooler (S2 -> S4),-208.49072767622192,kW,
+B5 water knock-out (S4 -> SYNGAS + WAT),-39.50222991080316,kW,latent + sensible heat removed
+B10 oxidant preheater (S1 -> S9; internal),-32.316786550718376,kW,equals H(15) - H(AIRBLOWN); internal
+B16 exhaust heat exchanger (S8 -> S15),-151.13347206420633,kW,
+Dryer + decomposer + pyrolyzer demand (2-3 minus 1),151.13160722060124,kW,
+Heat-integration check (B16 - demand),0.0018648436050909822,kW,~0
+Engine S7 -> S8 enthalpy drop,473.8550099103716,kW,
+Compressor B6 shaft work,668.0,kW,flowsheet label
+Turbine B7 shaft work,1054.0,kW,flowsheet label
+Net shaft work (turbine - compressor),386.0,kW,
+Mechanical losses (enthalpy drop - net work),87.85500991037162,kW,
+Syngas chemical energy (LHV),1421.4592022866902,kW,kmol/h x MJ/kmol / 3.6
+Syngas total energy (chemical + sensible),1428.4742273429863,kW,
+Syngas sensible heat (at 50 C),7.015025056296054,kW,
+Unburnt CO + H2 in exhaust,0.03152980825157631,kW,
+Exhaust energy at S8,954.3103832888801,kW,
+Exhaust sensible heat at S8 (686 C),954.2788534806285,kW,
+Exhaust energy at S15,803.176911224674,kW,
+Stack sensible heat at S15 (588 C),803.1453814164224,kW,
+Memo: condensate energy vs vapour datum,-38.90469866315366,kW,not a separate output
+"Water condensation at B5, counted once",0.5975312476494992,kW,B5 heat removed less latent heat not in LHV datum
+Biomass energy in (LHV),1603.9189831268625,kW,
+Oxidant sensible energy,0.5496857659481217,kW,
+Heat supplied by B16 (dryer + decomposer + pyrolyzer),151.13160722060124,kW,
+TOTAL ENERGY IN,1755.6002761134118,kW,
+Syngas sensible heat,7.015025056296054,kW,
+Gasifier reactors net heat released (OXID + RED),118.63143343634948,kW,
+B2 cooler heat removed,208.49072767622192,kW,
+Water condensation at B5 (counted once),0.5975312476494992,kW,
+Heat loss to surroundings (balancing item),-1.61164483979519,kW,in - all other outputs
+TOTAL ENERGY OUT,1755.6002761134118,kW,
+In - Out,0.0,kW,0 (loss line closes it)
+Heat loss as % of biomass energy in,-0.0010048168621667323,%,
+Cold gas efficiency (syngas LHV / biomass LHV),0.88624127355581,%,
+Engine air energy,-0.30883411849777165,kW,
+Mechanical losses (compressor + turbine),87.85500991037162,kW,
+Exhaust sensible heat at S8,954.2788534806285,kW,
+"Recovered in B16 (to dryer, decomposer, pyrolyzer)",151.13347206420633,kW,
+Stack sensible heat at S15,803.1453814164224,kW,
+Check: S8 - B16 - S15,0.0,kW,0
+Fraction of exhaust heat recovered,0.1583745374980944,%,
+Net shaft work,386.0,kW,
+Engine mechanical losses,87.85500991037162,kW,
+Stack sensible heat (S15),803.1453814164224,kW,
+Heat loss to surroundings (from gasifier balance),-1.61164483979519,kW,
+Closure (out / in),0.9999988374794075,%,
+Heat loss as % of energy in,-0.0010046659970276155,%,
+Aspen stream-enthalpy closure of whole plant (should be ~0),0.0018648693286422713,kW,H in - H out - (engine drop + reactors + B2 + B5)
+Engine net shaft efficiency (shaft / syngas LHV),0.2715519371776867,%,
+Overall net shaft efficiency (shaft / biomass LHV),0.24066053464090037,%,
+Compressor work / turbine work,0.6337760910815939,%,
+Atom balance: C out-in (% of in),0.00017919434687078059,%,see Atom Balance sheet

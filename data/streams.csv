@@ -1,0 +1,29 @@
+no,from,to,service,phase,flow_kgh,temp_C,press_bar,pid_hints,description
+0,PK-101,H-101,BM,solid,417,25,1,,Biomass to hopper (not numbered on PFD)
+1,H-101,SC-101,BM,solid,417,25,1,SG,Biomass feed (354 kg/h in gasifier mode)
+2,SC-101,R-101,BM,solid,417,120,1,RV,Dried biomass (354 kg/h in gasifier mode)
+3,E-101,R-101,SH,solid,7100,650,1,SG,Hot steel shots
+4,R-101,CY-201,PV,gas,313,450,0.9,TI,Pyrolysis vapours
+5,CY-201,E-201,PV,gas,313,450,0.9,,Pyrolysis vapours to condensing
+V1,E-201,E-202,PV,gas,,,0.9,TI,Vapour condenser-1 to condenser-2 (not numbered)
+L1,E-201,TK-201,BO,liquid,,,,ISO,Bio-oil from condenser-1 (flow split not on PFD)
+L2,E-202,TK-202,BO,liquid,,,,ISO,Bio-oil from condenser-2 (flow split not on PFD)
+6,E-202,B-201,NCG,gas,104,80,0.9,ISO,Non-condensable gases
+7,B-201,FL-201,NCG,gas,20,80,1,CHK;PCV;FA,NCG to flare
+8,B-201,SC-101,NCG,gas,84,80,1,CHK;FIC,NCG recycle (destination to be verified)
+9,R-101,E-301,CH,solid,7204,450,0.9,,Char + shots
+10,E-301,S-301,CH,solid,7204,40,0.9,TI,Cooled char + shots
+11,S-301,TK-301,CH,solid,104,40,0.9,RV,Char to storage
+12,S-301,E-101,SH,solid,7100,40,0.9,,Shots recycle
+13,R-101,R-401,PG,gas,212,450,0.9,XV,Pyrolysis gases to POX (gasifier mode)
+14,R-101,R-401,CH,solid,142,450,0.9,RV,Char to gasifier (gasifier mode)
+15,PK-401,E-401,OX,gas,117,40,5,ISO;PCV,106 kg/h O2 + 11 kg/h N2
+16,E-401,R-401,OX,gas,117,150,5,FIC;XV;CHK,Pre-heated oxidant
+17,R-401,PK-402,SG,gas,465,450,0.9,TI;AI,Raw syngas
+18,PK-402,PK-501,SG,gas,,,,ISO;XV,Clean syngas (flow not on PFD)
+19,PK-501,E-401,EG,gas,,,,TI,Engine exhaust to pre-heater (flow not on PFD)
+19A,E-401,SC-101,EG,gas,,,,,Exhaust to dryer header (routing to be verified)
+CWS1,CT-201,E-201,CWS,liquid,,,,ISO,Cooling water supply
+CWS2,CT-201,E-202,CWS,liquid,,,,ISO,Cooling water supply
+CWR1,E-201,CT-201,CWR,liquid,,,,TV,Cooling water return
+CWR2,E-202,CT-201,CWR,liquid,,,,TV,Cooling water return

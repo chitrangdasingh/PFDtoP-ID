@@ -1,0 +1,28 @@
+no,from,to,service,phase,flow_kgh,temp_C,press_bar,pid_hints,description
+0,PK-101,H-101,BM,solid,354.0,25.0,1.0,,Biomass to hopper (not numbered on PFD)
+1,H-101,SC-101,BM,solid,354.0,25.0,1.0,SG,Biomass feed
+2,SC-101,R-101,BM,solid,354.0,120.0,1.0,RV,Dried biomass
+3,E-101,R-101,SH,solid,,,,SG,"Hot steel shots - not defined for gasifier mode on PFD, to be confirmed"
+9,R-101,E-301,CH,solid,,,,,"Char + shots - not defined for gasifier mode on PFD, to be confirmed"
+10,E-301,S-301,CH,solid,,,,TI,"Cooled char + shots - not defined for gasifier mode on PFD, to be confirmed"
+12,S-301,E-101,SH,solid,,,,,"Shots recycle - not defined for gasifier mode on PFD, to be confirmed"
+13,R-101,R-401,PG,gas,212.0,450.0,0.9,XV,Pyrolysis gases to POX (gasifier mode)
+14,R-101,R-401,CH,solid,142.0,450.0,0.9,RV,Char to gasifier (gasifier mode)
+15,PK-401,E-401,OX,gas,117.0,40.0,5.0,ISO;PCV,106 kg/h O2 + 11 kg/h N2
+16,E-401,R-401,OX,gas,117.0,150.0,5.0,FIC;XV;CHK,Pre-heated oxidant
+17,R-401,E-402,SG,gas,465.0,450.0,0.9,TI;AI,"Raw syngas, oxy-blown case: H2 47.7, CO 30.2, CO2 19.9, N2 1.8, CH4 0.4 vol% dry"
+A1,R-401,TK-403,AS,solid,6.0,,,RV,"Gasifier ash - not on PFD, 6 kg/h from mass balance gap"
+17A,E-402,F-401,SG,gas,465.0,90.0,0.9,TI,"Cooled syngas, about 90 C as on Viking - assumed, not on PFD"
+D1,F-401,TK-402,AS,solid,,,,RV,"Filter dust - assumed, not on PFD"
+N2,PK-403,F-401,N2,gas,,,,ISO;PCV,"Nitrogen back-flush for bag filter - assumed, not on PFD"
+17B,F-401,E-403,SG,gas,465.0,90.0,0.9,,"Filtered syngas, dust not deducted - assumed, not on PFD"
+C1,E-403,TK-401,CD,liquid,,,,ISO,"Condensate - assumed, not on PFD"
+17C,E-403,F-402,SG,gas,,45.0,0.9,TI,"Syngas after condensing cooler, about 45 C - assumed, flow needs water content"
+17D,F-402,B-401,SG,gas,,,,ISO,"Syngas to blower - assumed, not on PFD"
+18,B-401,PK-501,SG,gas,,,,CHK;XV;FA,Clean syngas to engine (flow not on PFD)
+19,PK-501,E-401,EG,gas,,,,TI,Engine exhaust to pre-heater (flow not on PFD)
+CWS1,U-401,E-402,CWS,liquid,,,,ISO,Cooling water supply - assumed
+CWS2,U-401,E-403,CWS,liquid,,,,ISO,Cooling water supply - assumed
+CWR1,E-402,U-401,CWR,liquid,,,,TV,Cooling water return - assumed
+CWR2,E-403,U-401,CWR,liquid,,,,TV,Cooling water return - assumed
+19A,E-401,SC-101,EG,gas,,,,,Exhaust to dryer header (routing to be verified)

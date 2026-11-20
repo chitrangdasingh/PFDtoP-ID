@@ -1,0 +1,16 @@
+no,from,to,service,phase,flow_kgh,temp_C,press_bar,pid_hints,description
+0,PK-101,H-101,BM,solid,354.0,25.0,1.0,,Biomass to hopper (not numbered on PFD)
+1,H-101,SC-101,BM,solid,354.0,25.0,1.0,SG,Biomass feed
+2,SC-101,R-101,BM,solid,354.0,120.0,1.0,RV,Dried biomass
+3,E-101,R-101,SH,solid,,,,SG,"Hot steel shots - not defined for gasifier mode on PFD, to be confirmed"
+9,R-101,E-301,CH,solid,,,,,"Char + shots - not defined for gasifier mode on PFD, to be confirmed"
+10,E-301,S-301,CH,solid,,,,TI,"Cooled char + shots - not defined for gasifier mode on PFD, to be confirmed"
+12,S-301,E-101,SH,solid,,,,,"Shots recycle - not defined for gasifier mode on PFD, to be confirmed"
+13,R-101,R-401,PG,gas,212.0,450.0,0.9,XV,Pyrolysis gases to POX (gasifier mode)
+14,R-101,R-401,CH,solid,142.0,450.0,0.9,RV,Char to gasifier (gasifier mode)
+15,PK-401,E-401,OX,gas,117.0,40.0,5.0,ISO;PCV,106 kg/h O2 + 11 kg/h N2
+16,E-401,R-401,OX,gas,117.0,150.0,5.0,FIC;XV;CHK,Pre-heated oxidant
+17,R-401,PK-402,SG,gas,465.0,450.0,0.9,TI;AI,Raw syngas
+18,PK-402,PK-501,SG,gas,,,,ISO;XV,Clean syngas (flow not on PFD)
+19,PK-501,E-401,EG,gas,,,,TI,Engine exhaust to pre-heater (flow not on PFD)
+19A,E-401,SC-101,EG,gas,,,,,Exhaust to dryer header (routing to be verified)

@@ -1,0 +1,7 @@
+pandas
+networkx
+numpy
+openpyxl
+streamlit
+anthropic
+pypdf

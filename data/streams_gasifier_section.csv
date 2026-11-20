@@ -1,0 +1,8 @@
+no,from,to,service,phase,flow_kgh,temp_C,press_bar,pid_hints,description
+13,R-101,R-401,PG,gas,212.0,450.0,0.9,XV,Pyrolysis gases to POX (gasifier mode)
+14,R-101,R-401,CH,solid,142.0,450.0,0.9,RV,Char to gasifier (gasifier mode)
+15,PK-401,E-401,OX,gas,117.0,40.0,5.0,ISO;PCV,106 kg/h O2 + 11 kg/h N2
+16,E-401,R-401,OX,gas,117.0,150.0,5.0,FIC;XV;CHK,Pre-heated oxidant
+17,R-401,PK-402,SG,gas,465.0,450.0,0.9,TI;AI,"Raw syngas, oxy-blown case: H2 47.7, CO 30.2, CO2 19.9, N2 1.8, CH4 0.4 vol% dry"
+18,PK-402,PK-501,SG,gas,,,,ISO;XV,Clean syngas (flow not on PFD)
+19,PK-501,E-401,EG,gas,,,,TI,Engine exhaust to pre-heater (flow not on PFD)

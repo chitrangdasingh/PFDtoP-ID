@@ -1,0 +1,47 @@
+position,letter,meaning,modifier meaning
+First letter,A,"Analysis (composition, e.g. O2, CO, H2)",
+First letter,B,"Burner, combustion (flame)",
+First letter,C,User's choice,
+First letter,D,User's choice,Differential (PD = pressure differential)
+First letter,E,Voltage,
+First letter,F,Flow rate,Ratio (FF = flow ratio)
+First letter,G,User's choice,
+First letter,H,Hand (manual),
+First letter,I,Current (electrical),
+First letter,J,Power,Scan
+First letter,K,"Time, time schedule",Time rate of change
+First letter,L,Level,
+First letter,M,User's choice,Momentary
+First letter,N,User's choice,
+First letter,O,User's choice,
+First letter,P,"Pressure, vacuum",
+First letter,Q,Quantity,"Integrate, totalise (FQ = flow total)"
+First letter,R,Radiation,
+First letter,S,"Speed, frequency","Safety (PSV, TSHH)"
+First letter,T,Temperature,
+First letter,U,Multivariable,
+First letter,V,"Vibration, mechanical analysis",
+First letter,W,"Weight, force",
+First letter,X,Unclassified (define on legend; here XV = on/off shutdown valve),X axis
+First letter,Y,"Event, state, presence",Y axis
+First letter,Z,"Position, dimension",Z axis
+Succeeding letter,A,Alarm,
+Succeeding letter,C,Control,
+Succeeding letter,E,"Sensor, primary element",
+Succeeding letter,G,"Glass, gauge, viewing device",
+Succeeding letter,H,,High (HH = high-high)
+Succeeding letter,I,Indicate,
+Succeeding letter,K,Control station,
+Succeeding letter,L,Light (pilot lamp),Low (LL = low-low)
+Succeeding letter,M,,"Middle, intermediate"
+Succeeding letter,O,"Orifice, restriction",
+Succeeding letter,P,Point (test connection),
+Succeeding letter,R,Record,
+Succeeding letter,S,Switch,
+Succeeding letter,T,Transmit,
+Succeeding letter,U,Multifunction,
+Succeeding letter,V,"Valve, damper, louver",
+Succeeding letter,W,"Well, probe",
+Succeeding letter,X,Unclassified,
+Succeeding letter,Y,"Relay, compute, convert",
+Succeeding letter,Z,"Driver, actuator, final control element",

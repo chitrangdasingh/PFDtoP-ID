@@ -1,0 +1,363 @@
+{
+ "task": "PFD element -> P&ID items (in-line valves and instruments per stream; instruments per equipment item)",
+ "stages": [
+  "1: pre-train on synthetic P&ID graphs (GraphML) - coarse grammar",
+  "2: 1500 generated flowsheets",
+  "3: fine-tune on the 10 TPD Aspen case (augmented)"
+ ],
+ "data": {
+  "graphml_files": [
+   "synthetic_pid_0.graphml",
+   "synthetic_pid_1.graphml",
+   "synthetic_pid_2.graphml",
+   "synthetic_pid_3.graphml"
+  ],
+  "graphml_fragments": 1328,
+  "generated_plants": 1500,
+  "generated_elements": 45926,
+  "real_train_elements": 36,
+  "real_test_elements": 48
+ },
+ "results": {
+  "A. real plant only (no pre-training)": {
+   "final_losses": [
+    0.0109
+   ],
+   "test_real_8p5tpd": {
+    "line": {
+     "n": 27,
+     "top1": 0.556,
+     "topk": 0.741,
+     "precision": 0.667,
+     "recall": 0.69,
+     "f1": 0.678
+    },
+    "equip": {
+     "n": 21,
+     "top1": 0.667,
+     "topk": 0.762,
+     "precision": 0.694,
+     "recall": 0.735,
+     "f1": 0.714
+    }
+   },
+   "test_generated": {
+    "line": {
+     "n": 3112,
+     "top1": 0.503,
+     "topk": 0.695,
+     "precision": 0.561,
+     "recall": 0.678,
+     "f1": 0.614
+    },
+    "equip": {
+     "n": 3023,
+     "top1": 0.642,
+     "topk": 0.721,
+     "precision": 0.751,
+     "recall": 0.744,
+     "f1": 0.748
+    }
+   },
+   "train_real_10tpd": {
+    "line": {
+     "n": 19,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "equip": {
+     "n": 17,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   }
+  },
+  "B. generated data only": {
+   "final_losses": [
+    0.3239
+   ],
+   "test_real_8p5tpd": {
+    "line": {
+     "n": 27,
+     "top1": 0.667,
+     "topk": 0.926,
+     "precision": 0.909,
+     "recall": 0.69,
+     "f1": 0.784
+    },
+    "equip": {
+     "n": 21,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "test_generated": {
+    "line": {
+     "n": 3112,
+     "top1": 0.825,
+     "topk": 1.0,
+     "precision": 0.838,
+     "recall": 0.927,
+     "f1": 0.881
+    },
+    "equip": {
+     "n": 3023,
+     "top1": 0.801,
+     "topk": 0.97,
+     "precision": 0.897,
+     "recall": 0.961,
+     "f1": 0.928
+    }
+   },
+   "train_real_10tpd": {
+    "line": {
+     "n": 19,
+     "top1": 0.789,
+     "topk": 0.947,
+     "precision": 0.95,
+     "recall": 0.864,
+     "f1": 0.905
+    },
+    "equip": {
+     "n": 17,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   }
+  },
+  "C. GraphML pre-training + generated data": {
+   "final_losses": [
+    0.2294,
+    0.3208
+   ],
+   "test_real_8p5tpd": {
+    "line": {
+     "n": 27,
+     "top1": 0.667,
+     "topk": 0.926,
+     "precision": 0.909,
+     "recall": 0.69,
+     "f1": 0.784
+    },
+    "equip": {
+     "n": 21,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "test_generated": {
+    "line": {
+     "n": 3112,
+     "top1": 0.825,
+     "topk": 1.0,
+     "precision": 0.833,
+     "recall": 0.937,
+     "f1": 0.882
+    },
+    "equip": {
+     "n": 3023,
+     "top1": 0.801,
+     "topk": 0.97,
+     "precision": 0.897,
+     "recall": 0.961,
+     "f1": 0.928
+    }
+   },
+   "train_real_10tpd": {
+    "line": {
+     "n": 19,
+     "top1": 0.842,
+     "topk": 0.947,
+     "precision": 0.952,
+     "recall": 0.909,
+     "f1": 0.93
+    },
+    "equip": {
+     "n": 17,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   }
+  },
+  "D. generated data + fine-tune on real plant": {
+   "final_losses": [
+    0.3239,
+    0.0032
+   ],
+   "test_real_8p5tpd": {
+    "line": {
+     "n": 27,
+     "top1": 0.667,
+     "topk": 0.963,
+     "precision": 0.786,
+     "recall": 0.759,
+     "f1": 0.772
+    },
+    "equip": {
+     "n": 21,
+     "top1": 0.952,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 0.971,
+     "f1": 0.985
+    }
+   },
+   "test_generated": {
+    "line": {
+     "n": 3112,
+     "top1": 0.737,
+     "topk": 0.99,
+     "precision": 0.775,
+     "recall": 0.911,
+     "f1": 0.838
+    },
+    "equip": {
+     "n": 3023,
+     "top1": 0.796,
+     "topk": 0.947,
+     "precision": 0.897,
+     "recall": 0.955,
+     "f1": 0.925
+    }
+   },
+   "train_real_10tpd": {
+    "line": {
+     "n": 19,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "equip": {
+     "n": 17,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   }
+  },
+  "E. full: GraphML + generated + fine-tune": {
+   "final_losses": [
+    0.2294,
+    0.3208,
+    0.0025
+   ],
+   "test_real_8p5tpd": {
+    "line": {
+     "n": 27,
+     "top1": 0.741,
+     "topk": 0.963,
+     "precision": 0.821,
+     "recall": 0.793,
+     "f1": 0.807
+    },
+    "equip": {
+     "n": 21,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   },
+   "test_generated": {
+    "line": {
+     "n": 3112,
+     "top1": 0.682,
+     "topk": 0.985,
+     "precision": 0.718,
+     "recall": 0.921,
+     "f1": 0.807
+    },
+    "equip": {
+     "n": 3023,
+     "top1": 0.801,
+     "topk": 0.937,
+     "precision": 0.897,
+     "recall": 0.961,
+     "f1": 0.928
+    }
+   },
+   "train_real_10tpd": {
+    "line": {
+     "n": 19,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "equip": {
+     "n": 17,
+     "top1": 1.0,
+     "topk": 1.0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    }
+   }
+  }
+ },
+ "features": 501,
+ "tokens": [
+  "<eos>",
+  "SG",
+  "RV",
+  "ISO",
+  "XV",
+  "FA",
+  "AI",
+  "TI",
+  "LSH",
+  "LSL",
+  "TIC",
+  "TSHH",
+  "SIC",
+  "PSHH",
+  "PI",
+  "LG",
+  "PDI",
+  "PIC",
+  "FI",
+  "LI",
+  "CHK",
+  "PCV",
+  "FIC",
+  "TV",
+  "PSV",
+  "BSL",
+  "LV",
+  "PDIC",
+  "LIC",
+  "LSHH"
+ ],
+ "trained_seconds": 252,
+ "seed_check_real_test_streams": {
+  "note": "Mean \u00b1 std over 3 further seeds (11, 23, 42), streams of the unseen 8.5 TPD case (27 streams). One stream = 0.037.",
+  "A. real plant only": "top1 0.581\u00b10.017, top5 0.753\u00b10.017, F1 0.700\u00b10.000",
+  "B. generated data only": "top1 0.679\u00b10.017, top5 0.901\u00b10.017, F1 0.782\u00b10.010",
+  "D. generated + fine-tune": "top1 0.692\u00b10.017, top5 0.963\u00b10.000, F1 0.784\u00b10.009",
+  "E. full (GraphML + generated + fine-tune)": "top1 0.692\u00b10.017, top5 0.951\u00b10.017, F1 0.781\u00b10.007"
+ }
+}

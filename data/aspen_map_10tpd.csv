@@ -1,0 +1,20 @@
+no,aspen_streams,from,to,service,phase,pid_hints,description
+0,1,PK-101,H-101,BM,solid,,Wet biomass to hopper (same as Aspen stream 1; not a separate Aspen stream)
+1,1,H-101,SC-101,BM,solid,SG,Aspen 1: wet biomass feed (20 % moisture)
+2,2,SC-101,R-101,BM,solid,RV,Aspen 2: dried biomass plus the evaporated moisture (DRYER to DECOMP)
+13,13,R-101,R-401,PG,gas,XV,Aspen 13: pyrolysis gas (CYCLONE to MIXER)
+14,14+A,R-101,R-401,CH,solid,RV,Aspen 14 + A: char carbon plus ash (SEP to MIXER)
+AIRBLOWN,AIRBLOWN,PK-401,E-401,OXC,gas,ISO;PCV,Aspen AIRBLOWN: oxidant 45:55 O2:CO2 by mass
+15,15,E-401,R-401,OXC,gas,FIC;XV;CHK,Aspen 15: pre-heated oxidant (B10 to MIXER)
+S1,S1,R-401,E-401,SG,gas,TI,Aspen S1: raw syngas leaving the reduction zone (RED to B10)
+S9,S9,E-401,CY-401,SG,gas,TI,Aspen S9: syngas after oxidant pre-heater (B10 to B1)
+ASH,ASH,CY-401,TK-403,AS,solid,RV,Aspen ASH: ash from hot cyclone B1
+S2,S2,CY-401,E-402,SG,gas,,Aspen S2: de-ashed syngas (B1 to B2)
+S4,S4,E-402,V-401,SG,gas,TI,Aspen S4: cooled syngas (B2 to B5)
+WAT,WAT,V-401,TK-401,CD,liquid,LV,Aspen WAT: condensed water from knock-out B5
+SYNGAS,SYNGAS,V-401,PK-501,SG,gas,ISO;XV;FA;AI,Aspen SYNGAS: dry syngas to engine air mixer B4
+AIR,AIR,F-501,PK-501,AIR,gas,,Aspen AIR: engine combustion air
+S8,S8,PK-501,E-501,EG,gas,TI,Aspen S8: engine exhaust (ENGINE to B16)
+S15,S15,E-501,ST-501,EG,gas,TI,Aspen S15: exhaust to stack after heat recovery
+CWS1,,U-401,E-402,CWS,liquid,ISO,Cooling water supply to syngas cooler - assumed (Aspen gives duty only)
+CWR1,,E-402,U-401,CWR,liquid,TV,Cooling water return - assumed

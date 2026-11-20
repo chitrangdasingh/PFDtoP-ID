@@ -1,0 +1,20 @@
+no,from,to,service,phase,flow_kgh,temp_C,press_bar,pid_hints,description,vol_m3h,density_kgm3,enthalpy_kW,composition
+0,PK-101,H-101,BM,solid,417.0,25.0,1.0,,Wet biomass to hopper (same as Aspen stream 1; not a separate Aspen stream),0.34,1225.6491,-916.4,WET-BIO 100.0%
+1,H-101,SC-101,BM,solid,417.0,25.0,1.0,SG,Aspen 1: wet biomass feed (20 % moisture),0.34,1225.6491,-916.4,WET-BIO 100.0%
+2,SC-101,R-101,BM,solid,417.0,120.0,1.0,RV,Aspen 2: dried biomass plus the evaporated moisture (DRYER to DECOMP),150.47,2.7713,-839.3,"DRY-BIO 80.0%, WATER 20.0%"
+13,R-101,R-401,PG,gas,342.8,500.0,1.0,XV,Aspen 13: pyrolysis gas (CYCLONE to MIXER),1112.608,0.3081,-777.3,"CO2 45.6%, WATER 32.6%, METHANE 11.3%, CO 4.1%, H2 2.6%, C10H8 2.6%, C6H6 1.1%"
+14,R-101,R-401,CH,solid,74.2,500.0,1.0,RV,Aspen 14 + A: char carbon plus ash (SEP to MIXER),0.032,2299.5316,11.9,C 100.0% | ASH 100.0%
+AIRBLOWN,PK-401,E-401,OXC,gas,277.8,30.0,1.0,ISO;PCV,Aspen AIRBLOWN: oxidant 45:55 O2:CO2 by mass,185.499,1.4976,-379.0,"CO2 55.0%, O2 45.0%"
+15,E-401,R-401,OXC,gas,277.8,450.0,1.0,FIC;XV;CHK,Aspen 15: pre-heated oxidant (B10 to MIXER),443.691,0.6261,-346.6,"CO2 55.0%, O2 45.0%"
+S1,R-401,E-401,SG,gas,694.86,800.0,1.0,TI,Aspen S1: raw syngas leaving the reduction zone (RED to B10),2732.895,0.2543,-1230.6,"CO2 61.2%, CO 24.2%, WATER 8.3%, H2 3.1%, METHANE 2.4%, ASH 0.6%"
+S9,E-401,CY-401,SG,gas,694.86,708.2,1.0,TI,Aspen S9: syngas after oxidant pre-heater (B10 to B1),2499.052,0.278,-1262.9,"CO2 61.2%, CO 24.2%, WATER 8.3%, H2 3.1%, METHANE 2.4%, ASH 0.6%"
+ASH,CY-401,TK-403,AS,solid,4.5,708.2,1.0,RV,Aspen ASH: ash from hot cyclone B1,0.001,3486.8839,-0.2,ASH 100.0%
+S2,CY-401,E-402,SG,gas,690.36,708.2,1.0,,Aspen S2: de-ashed syngas (B1 to B2),2499.05,0.2762,-1262.7,"CO2 61.6%, CO 24.4%, WATER 8.4%, H2 3.1%, METHANE 2.4%"
+S4,E-402,V-401,SG,gas,690.36,50.0,1.0,TI,Aspen S4: cooled syngas (B2 to B5),820.831,0.841,-1471.2,"CO2 61.6%, CO 24.4%, WATER 8.4%, H2 3.1%, METHANE 2.4%"
+WAT,V-401,TK-401,CD,liquid,58.0,50.0,1.0,LV,Aspen WAT: condensed water from knock-out B5,0.06,969.7263,-255.1,WATER 99.9%
+SYNGAS,V-401,PK-501,SG,gas,632.36,50.0,1.0,ISO;XV;FA;AI,Aspen SYNGAS: dry syngas to engine air mixer B4,735.809,0.8594,-1255.6,"CO2 67.3%, CO 26.6%, H2 3.4%, METHANE 2.6%"
+AIR,F-501,PK-501,AIR,gas,3992.37,25.0,1.0,,Aspen AIR: engine combustion air,3428.741,1.1644,-0.3,"N2 76.8%, O2 23.2%"
+S8,PK-501,E-501,EG,gas,4624.73,686.4,1.0,TI,Aspen S8: engine exhaust (ENGINE to B16),12564.948,0.3681,-1729.7,"N2 66.3%, CO2 15.9%, O2 12.9%, WATER 5.0%"
+S15,E-501,ST-501,EG,gas,4624.73,588.4,1.0,TI,Aspen S15: exhaust to stack after heat recovery,11281.468,0.4099,-1880.8,"N2 66.3%, CO2 15.9%, O2 12.9%, WATER 5.0%"
+CWS1,U-401,E-402,CWS,liquid,17956.0,32.0,4.0,ISO,"Cooling water supply to syngas cooler E-402 - assumed: flow from duty 208.5 kW at 10 K rise (32 to 42 C), 3 bar g",,,,
+CWR1,E-402,U-401,CWR,liquid,17956.0,42.0,4.0,TV,Cooling water return from syngas cooler E-402 - assumed: 10 K rise,,,,
